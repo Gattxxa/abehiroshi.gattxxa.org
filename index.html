@@ -1,0 +1,237 @@
+<html>
+
+<head>
+  <meta name="robots" content="noindex">
+  <title>카후のホームページ</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <!-- メニュー -->
+  <section id="menu">
+    <table>
+      <tbody>
+        <tr>
+          <td><span style="color:#FFCCCC">●</span></td>
+          <td><p><a href="index.html">トップ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#00FF00">●</span></td>
+          <td><p><a href="https://github.com/Gattxxa">ギットハブ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#33FFFF">●</span></td>
+          <td><p><a href="https://twitter.com/Gattxxa">ツイッター</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#0099FF">●</span></td>
+          <td><p><a href="https://blog.gattxxa.org/">ブログ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#0000FF">●</span></td>
+          <td><p><a href="special.html">スペシャル</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#333399">●</span></td>
+          <td><p><a href="link.html">リンク集</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#CC00CC">●</span></td>
+          <td><p><a href="" id="admin">管理者</a></p></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 仕切り線 -->
+  <section id="partition"></section>
+
+  <!-- トップページ -->
+  <section id="top">
+    <h1>카후のホームページ</h1>
+    <div class="flex">
+
+      <!-- 左側 / トップページ -->
+      <section id="profile">
+        <img src="avatar.webp" id="avatar">
+        <div class="flex">
+          <p>
+            카후（Gattxxa）<br>
+            生年月日 非公開<br>
+            血液型 非公開<br>
+            <a href="https://gattxxa.org/">プロフィール</a>
+          </p>
+        </div>
+        <div class="contact">
+          <p>
+            If you have any enquiries 
+            regarding this project, or 
+            would like to make an enquiry 
+            concerning hytusx roulette, 
+            please do not hesitate to 
+            contact me through the 
+            following email address.<br>
+            <br>
+            mail:<a href="#" id="mail">okita@gattxxa.org</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- 右側 / トップページ -->
+      <section id="information">
+        <p class="flex latest-news">★★★　最新情報　★★★</p>
+        <div class="content">
+          <h2>・活動</h2>
+          <p>
+            ウェブサイト『<a href="https://abehiroshi.gattxxa.org/">카후のホームページ</a>』<br>
+            「abehiroshi.gattxxa.org」にて1月17日より公開
+          </p>
+          <p>
+            2022年 フリーゲーム『<a href="https://github.com/Gattxxa/HytusxRoulette">HytusxRoulette</a>』<br>
+            1月25日（火）リリース
+          </p>
+        </div>
+        <div class="content">
+          <h2>・実績</h2>
+          <div>
+            <p>
+              『<a href="https://sushida.net/">寿司打</a>』高級 10,000円コース【普通】<br>
+              2023年1月17日 170位
+            </p>
+            <p>
+              『<a href="https://kart.nexon.com/">카트라이더</a>』L3 라이센스<br>
+              2022年9月19日取得
+            </p>
+          </div>
+        </div>
+        <div class="content">
+          <h2>・支援</h2>
+          <p>
+            Amazon『<a href="https://www.amazon.jp/hz/wishlist/ls/2HYQPPA4J4GO">欲しいものリスト</a>』<br>
+            2022年4月15日より共有開始
+          </p>
+        </div>
+        <div class="content attention">
+          <h2>
+            当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。<br>
+            また、まとめサイト等への引用を厳禁致します。<br>
+            お問い合わせはメールでご連絡をお願い致します。<br>
+          </h2>
+        </div>
+      </section>
+
+    </div>
+  </section>
+
+  <!-- スタイルシート -->
+  <style>
+    /* 共通 */
+    body {
+      height: 100%;
+      margin: 0px;
+      display: flex;
+    }
+  
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    #avatar {
+      max-width: 100%;
+    }
+    
+    /* メニュー */
+    #menu {
+      background-color: #F0F0FF;
+      width: 21.9%;
+      min-width: 150px;
+      overflow: auto;
+    }
+  
+    #menu table {
+      padding-top: 38px;
+      padding-left: 20px;
+      white-space: pre;
+    }
+  
+    #menu td {
+      height: 54px;
+    }
+    
+    /* 仕切り線 */
+    #partition {
+      background-color: #D0D0D0;
+      width: 5px;
+      border-left: solid 1px #AAAAAA;
+      border-right: solid 1px #252525;
+    }
+    
+    /* トップページ */
+    #top {
+      background-image: url("index-background.webp");
+      width: 100%;
+      overflow: auto;
+    }
+  
+    #top h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 1.4em;
+    }
+  
+    #profile {
+      max-width: 400px;
+    }
+  
+    #profile .contact p {
+      margin: 0px auto;
+      width: 240px;
+      margin-bottom: 3em;
+    }
+  
+    #information .latest-news {
+      margin-bottom: 3em;
+    }
+  
+    #information .content {
+      border-top: 1px solid #999999;
+      margin-left: 16px;
+      font-weight: bold;
+    }
+  
+    #information h2 {
+      font-size: 1em;
+      margin-bottom: 0.3em;
+    }
+  
+    #information .content p {
+      margin: 0em 0em 1em 4em;
+    }
+  
+    #information .attention {
+      margin-bottom: 3.5em;
+    }
+  </style>
+
+  <!-- スクリプト -->
+  <script>
+    document.getElementById("admin").onclick = function() {
+      if(window.prompt("ユーザー名","")) {
+        if(window.prompt("パスワード","") != null) {
+          alert("ユーザー名かパスワードが正しくありません。入力し直してください。");
+        }
+      }
+    }
+
+    document.getElementById("mail").onclick = function() {
+      alert("存在しないので送ってこないでください。\n本当に連絡が必要な方は contact@gattxxa.org まで。")
+    }
+  </script>
+</body>
+
+</html>
+
+

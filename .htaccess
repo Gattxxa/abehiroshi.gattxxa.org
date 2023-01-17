@@ -1,0 +1,9 @@
+BrowserMatch "Googlebot|Bingbot|Y!J-" crawler=true
+RewriteEngine On
+RewriteCond %{ENV:crawler} true
+RewriteRule . - [F]
+Header set X-Robots-Tag noindex
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]

@@ -1,0 +1,171 @@
+<html>
+
+<head>
+  <meta name="robots" content="noindex">
+  <title>카후のホームページ</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <!-- メニュー -->
+  <section id="menu">
+    <table>
+      <tbody>
+        <tr>
+          <td><span style="color:#FFCCCC">●</span></td>
+          <td><p><a href="index.html">トップ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#00FF00">●</span></td>
+          <td><p><a href="https://github.com/Gattxxa">ギットハブ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#33FFFF">●</span></td>
+          <td><p><a href="https://twitter.com/Gattxxa">ツイッター</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#0099FF">●</span></td>
+          <td><p><a href="https://blog.gattxxa.org/">ブログ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#0000FF">●</span></td>
+          <td><p><a href="special.html">スペシャル</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#333399">●</span></td>
+          <td><p><a href="link.html">リンク集</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#CC00CC">●</span></td>
+          <td><p><a href="" id="admin">管理者</a></p></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 仕切り線 -->
+  <section id="partition"></section>
+
+  <!-- トップページ -->
+  <section id="top">
+    <h1>相互リンク</h1>
+    <p>相互リンク募集中です！知り合いであればお気軽にご連絡ください！</p>
+    <div class="flex">
+      
+      <table border="1" width="80%">
+        <thead>
+          <tr>
+            <th width="15%">お名前</th>
+            <th width="20%">ウェブサイト</th>
+            <th width="70%">備考</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+              <td>しぐま さん</td>
+              <td><a href="https://shigu.jp/">shigu.jp</a></td>
+              <td>シンプルなページに反して、200km/hで爆走しながらのドリフトが得意なお方！</td>
+          </tr>
+          <tr>
+            <td>azure さん</td>
+            <td><a href="https://www.rz7.dev/">rz7.dev</a></td>
+            <td>謎の技術だらけで必見です！</td>
+          </tr>
+          <tr>
+            <td>バイブ さん</td>
+            <td><a href="https://dekameshi.com/">デカメシドットコム</a></td>
+            <td>バイブさんのホームページには隠しページが存在してますｗ探してみては！？</td>
+          </tr>
+          <tr>
+            <td>遠山 さん</td>
+            <td><a href="https://toyama1710.github.io/docs/">ei1710</a></td>
+            <td>要素が時代の波に乗っているホームページ！便利なリンクにはお世話になってますｗ</td>
+          </tr>
+          
+        </tbody>
+      </table>
+      
+
+    </div>
+    <p>当サイトはリンクフリーです。</p>
+  </section>
+
+  <!-- スタイルシート -->
+  <style>
+    /* 共通 */
+    body {
+      height: 100%;
+      margin: 0px;
+      display: flex;
+    }
+  
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    /* メニュー */
+    #menu {
+      background-color: #F0F0FF;
+      width: 21.9%;
+      min-width: 150px;
+      overflow: auto;
+    }
+  
+    #menu table {
+      padding-top: 38px;
+      padding-left: 20px;
+      white-space: pre;
+    }
+  
+    #menu td {
+      height: 54px;
+    }
+    
+    /* 仕切り線 */
+    #partition {
+      background-color: #D0D0D0;
+      width: 5px;
+      border-left: solid 1px #AAAAAA;
+      border-right: solid 1px #252525;
+    }
+    
+    /* トップページ */
+    #top {
+      background-image: url("link-background.webp");
+      width: 100%;
+      overflow: auto;
+    }
+  
+    #top h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 1.4em;
+    }
+
+    #top p {
+      text-align: center;
+    }
+    #top td {
+      height: 2.5em;
+    }
+
+  </style>
+
+  <!-- スクリプト -->
+  <script>
+    document.getElementById("admin").onclick = function() {
+      if(window.prompt("ユーザー名","")) {
+        if(window.prompt("パスワード","") != null) {
+          alert("ユーザー名かパスワードが正しくありません。入力し直してください。");
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
+
+

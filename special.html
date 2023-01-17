@@ -1,0 +1,164 @@
+<html>
+
+<head>
+  <meta name="robots" content="noindex">
+  <title>카후のホームページ</title>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <!-- メニュー -->
+  <section id="menu">
+    <table>
+      <tbody>
+        <tr>
+          <td><span style="color:#FFCCCC">●</span></td>
+          <td><p><a href="index.html">トップ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#00FF00">●</span></td>
+          <td><p><a href="https://github.com/Gattxxa">ギットハブ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#33FFFF">●</span></td>
+          <td><p><a href="https://twitter.com/Gattxxa">ツイッター</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#0099FF">●</span></td>
+          <td><p><a href="https://blog.gattxxa.org/">ブログ</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#0000FF">●</span></td>
+          <td><p><a href="special.html">スペシャル</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#333399">●</span></td>
+          <td><p><a href="link.html">リンク集</a></p></td>
+        </tr>
+        <tr>
+          <td><span style="color:#CC00CC">●</span></td>
+          <td><p><a href="" id="admin">管理者</a></p></td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 仕切り線 -->
+  <section id="partition"></section>
+
+  <!-- トップページ -->
+  <section id="top">
+    <h1>スペシャル</h1>
+    <p>当サイト限定！特別壁紙をプレゼント！<br>是非ご利用ください♪</p>
+    <div class="flex">
+      <!-- ダウンロードはこちらから！ -->
+      <div>
+        <img src="wallpaper_w800h600.jpeg">
+        <p class="bold">800x600</p>
+      </div>
+      <div>
+        <img src="wallpaper_w1024h768.jpeg">
+        <p class="bold">1024x768</p>
+      </div>
+      <div>
+        <img src="wallpaper_w1280h1024.jpeg">
+        <p class="bold">1280x1024</p>
+      </div>
+    </div>
+    <p>画像の二次配布を一切禁止します。</p>
+  </section>
+
+  <!-- スタイルシート -->
+  <style>
+    /* 共通 */
+    body {
+      height: 100%;
+      margin: 0px;
+      display: flex;
+    }
+  
+    .flex {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    /* メニュー */
+    #menu {
+      background-color: #F0F0FF;
+      width: 21.9%;
+      min-width: 150px;
+      overflow: auto;
+    }
+  
+    #menu table {
+      padding-top: 38px;
+      padding-left: 20px;
+      white-space: pre;
+    }
+  
+    #menu td {
+      height: 54px;
+    }
+    
+    /* 仕切り線 */
+    #partition {
+      background-color: #D0D0D0;
+      width: 5px;
+      border-left: solid 1px #AAAAAA;
+      border-right: solid 1px #252525;
+    }
+    
+    /* トップページ */
+    #top {
+      background-image: url("special-background.webp");
+      width: 100%;
+      overflow: auto;
+    }
+  
+    #top h1 {
+      text-align: center;
+      font-size: 2em;
+      margin-top: 1.4em;
+    }
+
+    #top p {
+      text-align: center;
+    }
+
+    #top img {
+      width:240px;
+      margin: 0px 30px;
+      pointer-events: none !important;
+      user-select: none !important;
+      -webkit-user-select: none !important;
+      -moz-user-select: none !important;
+      -ms-user-select: none !important;
+    }
+  </style>
+
+  <!-- スクリプト -->
+  <script>
+    document.getElementById("top").oncontextmenu = function(){
+      alert("右クリックは禁止されています。");
+      return false;
+    }
+
+    document.getElementById("admin").onclick = function() {
+      if(window.prompt("ユーザー名","")) {
+        if(window.prompt("パスワード","") != null) {
+          alert("ユーザー名かパスワードが正しくありません。入力し直してください。");
+        }
+      }
+    }
+  </script>
+</body>
+
+</html>
+
+
